@@ -1,20 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "./Axios";
+import './row.css'
+const baseURL = "https://image.tmdb.org/t/p/original"
 
-function Row({ title }) {
+function Row({ title, fetchURL, isbigger }) {
+  const [movies, setMovies] = useState([]);
+
   useEffect(() => {
     {
-      fetch("https://api.github.com/users/sanket9006/repos")
-        .then((response) => response.json())
-        .then((data) => console.log(data));
-      {
-        <h1>Hwllo</h1>;
+      async function fetchData() {
+        const response = await axios.get(`${fetchURL}`)
+        setMovies(response.data.results)
       }
+      fetchData();
     }
-  }, []);
+  }, [fetchURL]);
 
   return (
     <div>
       <h2>{title}</h2>
+
+      <div className="posters">
+        {movies.map((movie) => (
+          <img className="poster" src={`${baseURL}${isbigger ? movie.poster_path : movie.backdrop_path}`}></img>
+        ))}
+      </div>
     </div>
   );
 }

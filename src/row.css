@@ -1,0 +1,15 @@
+.posters {
+    display: flex;
+    column-gap: 10px;
+}
+
+.poster {
+    display: flex;
+    max-height: 150px;
+    object-fit: contain;
+    transition: transform 450ms;
+}
+
+.poster:hover {
+    transform: scale(1.1);
+}
