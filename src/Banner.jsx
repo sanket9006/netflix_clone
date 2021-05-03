@@ -29,7 +29,6 @@ export const Banner = () => {
             backgroundSize: 'cover',
             backgroundPosition: 'center center'
         }}>
-        {console.log(movies)}
 
             <div className="banner_contents">
                 <h2 className="banner_title">{movies?.title || movies?.original_title}</h2>

@@ -1,0 +1,33 @@
+.netflix-logo {
+    height:40px;
+    object-fit:contain;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.user-logo {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+}
+
+.navbar {
+    display:flex;
+    justify-content:flex-end;
+    position:fixed;
+    height: 50px;
+}
+
+.nav_black {
+    background-color: black;
+    width: 100%;
+    transition: all 350ms;;
+}
+
+.user-logo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}

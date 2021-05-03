@@ -1,11 +1,12 @@
 .banner {
-    height: 448px;
+    min-height: 448px;
     width: 100%;
     color: white;
 }
 
 .bannner__description {
-    width: 45rem;
+    width: 45vw;
+    padding-bottom: 30px;
 }
 
 .banner_contents {
