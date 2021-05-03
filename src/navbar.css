@@ -18,6 +18,8 @@
     justify-content:flex-end;
     position:fixed;
     height: 50px;
+        z-index: 1;
+
 }
 
 .nav_black {
