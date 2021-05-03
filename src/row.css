@@ -1,15 +1,46 @@
 .posters {
-    display: flex;
-    column-gap: 10px;
+  display: flex;
+  column-gap: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.posters::-webkit-scrollbar {
+  display: none;
 }
 
 .poster {
-    display: flex;
-    max-height: 150px;
-    object-fit: contain;
-    transition: transform 450ms;
+  display: flex;
+  max-height: 150px;
+  object-fit: contain;
+  transition: transform 450ms;
+  margin-left: 10px;
 }
 
 .poster:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.land_poster:hover {
+  transform: scale(1.05);
+}
+
+.row {
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.land_larger {
+  min-height: 200px;
+}
+
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.row h2 {
+  color: white;
 }
