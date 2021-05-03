@@ -13,8 +13,6 @@
 .banner_contents {
     margin-left: 35px;  
     padding-top: 100px;
-    z-index: 1;
-
 }
 
 .bannner__description p {
@@ -39,6 +37,4 @@
     background-color: #e6e6e6;
     color:#000;
     transition: all 450ms;
-    z-index: 1;
-
 }

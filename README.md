@@ -1,6 +1,29 @@
+
+## Steps to deploy app on Github Pages
+
+Add following line at the top of package.json  
+```
+"homepage": "http://sanket9006.github.io/netflix_clone",
+```
+
+Add following lines inside script tag of package.json
+
+```
+"scripts": {
+//...
+"predeploy": "npm run build",
+"deploy": "gh-pages -d build"
+} 
+```
+
+push your repository to remote (online) and run 
+```
+npm run deploy
+```
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
