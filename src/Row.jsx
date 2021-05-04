@@ -1,3 +1,4 @@
+import Youtube from 'react-youtube'
 import React, { useEffect, useState } from "react";
 import axios from "./Axios";
 import './row.css'
@@ -16,6 +17,12 @@ function Row({ title, fetchURL, isbigger, islarger }) {
     }
   }, [fetchURL]);
 
+  const opts = {
+    width:"100%",
+    height: "400px",
+    autoplay : 1,
+  }
+
   return (
     <div className="row">
       <h2>{title}</h2>
@@ -29,6 +36,7 @@ function Row({ title, fetchURL, isbigger, islarger }) {
                           </img>
         ))}
       </div>
+      <Youtube id="EYy02ZTmJ2I"  opts = {opts}/>
     </div>
   );
 }

@@ -1,6 +1,14 @@
 
 ## Steps to deploy app on Github Pages
 
+
+
+First install github pages npm package   
+```
+npm install gh-pages --save-dev
+```
+
+
 Add following line at the top of package.json  
 ```
 "homepage": "http://sanket9006.github.io/netflix_clone",
